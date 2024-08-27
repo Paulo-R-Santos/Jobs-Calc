@@ -36,12 +36,16 @@ header {
 
 main {
   display: flex;
+  padding-top: 64px;
   width: 100%;
+  justify-content: space-between;
+  gap: 127px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .container-1 {
-  margin: 150px 50px 0px 160px;
+  width: 100%;
 }
 .dado {
   font-family: "IBM Plex Sans", sans-serif;
@@ -52,7 +56,7 @@ main {
 hr {
   margin: 20px 0px;
   color: #f6f7f7;
-  width: 600px;
+  width: 100%;
 }
 .job {
   font-family: "IBM Plex Sans", sans-serif;
@@ -61,7 +65,7 @@ hr {
   margin-bottom: 16px;
 }
 .item-maior {
-  width: 600px;
+  width: 100%;
   height: 50px;
   border: solid 1px #e1e3e5;
   border-radius: 5px;
@@ -97,11 +101,10 @@ hr {
   flex-direction: column;
 }
 .container-2 {
-  margin: 170px 10px;
   display: flex;
   flex-direction: column;
   border: solid 2px #e1e3e5;
-  padding: 40px;
+  padding: 40px 54px;
   align-items: center;
 }
 .dolar-1 {
@@ -128,11 +131,16 @@ hr {
 .btn-salvar {
   color: #ffff;
   background-color: #36b236;
-  padding: 12px 48px 12px 48px;
-  width: 200px;
+  padding: 12px 64px 12px 64px;
+  width: 181px;
+  height: 50px;
   text-transform: uppercase;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 700;
   border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.btn-lix {
+  padding: 12px;
 }
