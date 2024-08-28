@@ -3,305 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="media-query-pg-1.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./media-query-pg-1.css" />
+
     <title>Projeto-Javascript</title>
   </head>
+
   <body>
-    <header class="inicio-projeto">
-      <div class="div-de-separacao-inicio">
-      <section class="cabeçalho-1">
-        <div class="imagens-calculadora">
-          <img
-            src="imagens/Simbol.png"
-            alt="simbolo-de-calculadora"
-            class="imagem-calculadora"
-          />
-          <img
-            src="imagens/JobsCalc.png"
-            alt="titulo-calculadora"
-            class="titulo-cabeçalho-1"
-          />
-        </div>
-          
-        <div class="div-do-icone">
-          <img src="imagens/incone.png" alt="aqui-é-uma-imagem-de-icone">
-          <p class="paragrafo-do-icone">Você tem 2 horas livre no seu dia</p>
-        </div>
-          
-  
-
-        <div class="informaçoes-jaqueline">
-          <div class="titulo-separado">
-            <h2 class="nome-jaqueline">Jaqueline</h2>
-            <p class="legenda-perfil">Ver Perfil</p>
-          
+    <header class="header-container">
+      <div class="container header-content">
+        <section class="header-content-top">
+          <div class="logo-container">
+            <img src="images/calculator.png" alt="Ícone com as quatro operações básicas da matemática" />
+            <img src="images/jobs-calc.png" alt="JobsCalc logo" />
           </div>
-          <img
-            src="imagens/mulher.png"
-            alt="foto-perfil"
-            class="imagem-jaqueline"
-          />
-        </div>
-      </section>
-      <div class="linha-separacao">
-        <hr />
+
+          <div class="free-time-container">
+            <img src="images/exclamation-mark-rounded.png" alt="Ponto de exclamação com borda laranja" />
+            <p class="free-time-detail">Você tem 2 horas livre no seu dia</p>
+          </div>
+
+          <div class="user-info-container">
+            <div class="user-info-details">
+              <h2 class="username">Jaqueline</h2>
+              <p class="see-profile">Ver perfil</p>
+            </div>
+
+            <img
+              src="images/user-photo.png"
+              alt="Foto de perfil do usuário"
+              class="user-photo"
+            />
+          </div>
+        </section>
+
+        <div class="header-separator"></div>
+
+        <section class="header-content-bottom">
+          <div class="projects-status-container">
+            <div class="projects-status-content">
+              <h3 class="project-amount">12</h3>
+              <p class="project-status">Projeto ao total</p>
+            </div>
+            <div class="projects-status-content">
+              <h3 class="project-amount">7</h3>
+              <p class="project-status">Em andamento</p>
+            </div>
+            <div class="projects-status-content">
+              <h3 class="project-amount">4</h3>
+              <p class="project-status">Encerrados</p>
+            </div>
+          </div>
+
+          <div class="add-new-job-container">
+            <span class="add-new-job-icon-box">
+              <img src="images/plus.png" alt="Ícone do símbolo de adição" class="add-new-job-icon" />
+            </span>
+            <a class="add-new-job" href="#">adicionar novo job</a>
+          </div>
+        </section>
       </div>
-      <section class="cabeçalho-2">
-        <div class="numeros">
-          <div class="coluna-numero">
-            <h3>12</h3>
-            <p class="paragrafo-numero">Projeto ao total</p>
-          </div>
-          <div class="coluna-numero">
-            <h3>7</h3>
-            <p class="paragrafo-numero">Em andamento</p>
-          </div>
-          <div class="coluna-numero">
-            <h3>4</h3>
-            <p class="paragrafo-numero">Encerrados</p>
-          </div>
-        </div>
-
-        <div class="botao-numeros">
-        <div class="teste">
-         <span class="mais">+</span>
-        </div>
-          <a class="link-separado" href="#">adicionar novo job</a>
-        </div>
-      </section>
-    </div>
     </header>
 
-    <main class="corpo-site">
-      <div class="tabelas-do-site">
-        <table>
-          <tbody>
-            <tr>
-              <td class="numero">1</td>
-              <td class="local">Pizzaria Guloso</td>
-               
+    <main class="container">
+      <table class="jobs-table">
+        <tbody>
+          <tr>
+            <td class="job-index">1</td>
 
-              <td class="entrega">
-                <div class="ponto-1">
-                  <span class="prazo-valor">prazo</span>
-                  <span class="frase-dinheiro">3 dias para entrega<span>
-                </div>
-              </td>
+            <td class="job-name">Pizzaria Guloso</td>
+              
+            <td class="job-delivery-time">
+              <span class="table-data-title">prazo</span>
+              <span class="table-data-content">3 dias para entrega</span>
+            </td>
 
-
-            
-              <td class="preco">
-              <div class="ponto-1"> 
-                <span class="prazo-valor">valor</span>
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
           
-                <span class="frase-dinheiro">R$ 4500,00</span>
-              </div>  
-              </td>
-            
+            <td class="job-status">
+              <div class="job-status-box in-progress">Em andamento</div>
+            </td>
 
-              <td class="tempo">
-                <div class="formato verde">Em andamento</div>
-              </td>
-
-              <td class="icones-tabela">
-                <button>
-                <img src="imagens/Caneta.png" alt="imagem-caneta" /
-                class="itens-tabela">
+            <td class="job-actions">
+              <button>
+                <img src="images/pen.png" alt="Caneta" class="action-icon" />
               </button>
                 
               <button>
-                <img src="imagens/Lixeira.png"
-                alt="imagem-excluir" / class="itens-tabela">
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
               </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="numero">2</td>
-              <td class="local">Prust Modas</td>
+            </td>
+          </tr>
+          <tr>
+            <td class="job-index">2</td>
 
-              <td class="entrega">
-                <div class="ponto-1">
-                <span class="prazo-valor">prazo</span>
-                <span class="frase-dinheiro">6 dias para a entrega</span>
-              </div>
-              </td>
-              
+            <td class="job-name">Prust Modas</td>
 
-              <td class="preco">
-              <div class="ponto-1">
-                <span class="prazo-valor">valor</span>
-                <span class="frase-dinheiro">R$ 4500,00</span>
-              </div>
-              </td>
+            <td class="job-delivery-time">
+              <span class="table-data-title">prazo</span>
+              <span class="table-data-content">6 dias para a entrega</span>
+            </td>
 
-              <td class="tempo">
-                <div class="formato vermelho">Encerrado</div>
-              </td>
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
 
+            <td class="job-status">
+              <div class="job-status-box closed">Encerrado</div>
+            </td>
 
-
-              <td class="icones-tabela">
-                <button>
-                <img src="imagens/Caneta.png" alt="imagem-caneta" /
-                class="itens-tabela">
-                </button>
-
-                <button>
-                <img src="imagens/Lixeira.png"
-                alt="imagem-excluir" / class="itens-tabela">
-              </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="numero">3</td>
-              <td class="local">OneTwo Project</td>
-
-              <td class="entrega">
-              <div class="ponto-1">
-                <span class="prazo-valor">prazo</span>
-                <span class="frase-dinheiro">6 dias para entrega</span>
-              </div>
-              </td>
-
-              <td class="preco">
-                <div class="ponto-1">
-                <span class="prazo-valor">valor</span>
-                <span class="frase-dinheiro">R$ 4500,00</span>
-              </div>
-              </td>
-
-
-              <td class="tempo">
-                <div class="formato verde">Em andamento</div>
-              </td>
-
-              <td class="icones-tabela">
+            <td class="job-actions">
               <button>
-                <img src="imagens/Caneta.png" alt="imagem-caneta" /
-                class="itens-tabela">
+                <img src="images/pen.png" alt="Cante" class="action-icon" />
+              </button>
+
+              <button>
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="job-index">3</td>
+
+            <td class="job-name">OneTwo Project</td>
+
+            <td class="job-delivery-time">
+              <span class="table-data-title">prazo</span>
+              <span class="table-data-content">6 dias para entrega</span>
+            </td>
+
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
+
+            <td class="job-status">
+              <div class="job-status-box in-progress">Em andamento</div>
+            </td>
+
+            <td class="job-actions">
+              <button>
+                <img src="images/pen.png" alt="Cante" class="action-icon" />
               </button>
               <button>
-                <img src="imagens/Lixeira.png"
-                alt="imagem-excluir" / class="itens-tabela">
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
               </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="numero">4</td>
-              <td class="local">Pizzaria Guloso</td>
+            </td>
+          </tr>
+          <tr>
+            <td class="job-index">4</td>
 
-             <td class="entrega">
-              <div class="ponto-1">
-                <span class="prazo-valor">prazo</span>
-                <span class="frase-dinheiro">12 dias para entrega</span>
-              </div>
-             </td>
+            <td class="job-name">Pizzaria Guloso</td>
 
-             <td class="preco">
-              <div class="ponto-1">
-              <span class="prazo-valor">valor</span>
-              <span class="frase-dinheiro">R$ 4500,00</span>
-            </div>
-             </td>
+            <td class="job-delivery-time">
+                <span class="table-data-title">prazo</span>
+                <span class="table-data-content">12 dias para entrega</span>
+            </td>
 
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
 
+            <td class="job-status">
+              <div class="job-status-box in-progress">Em andamento</div>
+            </td>
 
-              <td class="tempo">
-                <div class="formato verde">Em andamento</div>
-              </td>
-              <td class="icones-tabela">
-                <button>
-                <img src="imagens/Caneta.png" alt="imagem-caneta" /
-                class="itens-tabela"> 
+            <td class="job-actions">
+              <button>
+                <img src="images/pen.png" alt="Cante" class="action-icon" /> 
               </button>
                 
               <button>
-                <img src="imagens/Lixeira.png"
-                alt="imagem-excluir" / class="itens-tabela">
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
               </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="numero">5</td>
-              <td class="local">Los Hermano</td>
+            </td>
+          </tr>
+          <tr>
+            <td class="job-index">5</td>
 
-             <td class="entrega">
-              <div class="ponto-1">
-               <span class="prazo-valor">prazo</span>
-               <span class="frase-dinheiro">6 dias para entrega</span>
-              </div>
-             </td>
+            <td class="job-name">Los Hermano</td>
 
-             <td class="preco">
-              <div class="ponto-1">
-              <span class="prazo-valor">valor</span>
-              <span class="frase-dinheiro">4500,00</span>
-            </div>
-             </td>
+            <td class="job-delivery-time">
+              <span class="table-data-title">prazo</span>
+              <span class="table-data-content">6 dias para entrega</span>
+            </td>
 
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
 
+            <td class="job-status">
+              <div class="job-status-box closed">Encerrado</div>
+            </td>
 
-              <td class="tempo">
-                <div class="formato vermelho">Encerrado</div>
-              </td>
-              <td class="icones-tabela">
-                <button>
-                <img src="imagens/Caneta.png" alt="imagem-caneta" /
-                class="itens-tabela"> 
+            <td class="job-actions">
+              <button>
+                <img src="images/pen.png" alt="Cante" class="action-icon" /> 
               </button>
               
               <button>
-                <img src="imagens/Lixeira.png"
-                alt="imagem-excluir" / class="itens-tabela">
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
               </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="numero">6</td>
-              <td class="local">OneTwo Project</td>
+            </td>
+          </tr>
+          <tr>
+            <td class="job-index">6</td>
 
-             <td class="entrega">
-              <div class="ponto-1">
-               <span class="prazo-valor">prazo</span>
-               <span class="frase-dinheiro">6 dias para entrega</span>
-              </div>
-             </td>
+            <td class="job-name">OneTwo Project</td>
 
-             <td class="preco">
-              <div class="ponto-1">
-              <span class="prazo-valor">valor</span>
-              <span class="frase-dinheiro">R$ 4500,00</span>
-            </div>
-             </td>
+            <td class="job-delivery-time">
+              <span class="table-data-title">prazo</span>
+              <span class="table-data-content">6 dias para entrega</span>
+            </td>
 
+            <td class="job-cost">
+              <span class="table-data-title">valor</span>
+              <span class="table-data-content">R$ 4500,00</span>
+            </td>
 
-              <td class="tempo">
-                <div class="formato verde">Em andamento</div>
-              </td>
-              <td class="icones-tabela">
-                <button>
-                <a href="#"></a> <img src="imagens/Caneta.png"
-                alt="imagem-caneta" / class="itens-tabela">
+            <td class="job-status">
+              <div class="job-status-box in-progress">Em andamento</div>
+            </td>
+
+            <td class="job-actions">
+              <button>
+                <a href="#"></a> <img src="images/pen.png" alt="Cante" class="action-icon" />
               </button>
                 
               <button>
-                <img
-                src="imagens/Lixeira.png" alt="imagem-excluir" /
-                class="itens-tabela">
+                <img src="images/trash.png" alt="Lixeira" class="action-icon" />
               </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   </body>
 </html>
-
-<!--
-  1- pendente
-  4- pendente
-  7- pendente
-  8- pendente
--->
